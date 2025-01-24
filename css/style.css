@@ -12,12 +12,68 @@ body{
     justify-content: center;
     background-color: black;
 }
+
+.header{
+    position: left;
+    width: auto;
+    margin-bottom: 20px;
+    margin-right: 940px;
+}
+
+.judul{
+    font-size: 16px;
+    color: azure;
+}
+
+.container{
+    position: relative;
+    width: 40%;
+    margin-bottom: 10px;
+   
+}
+
+.image {
+    border-radius: 8px;
+    display: block;
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: #65078a;
+  border-radius: 8px;
+}
+
+.container:hover .overlay {
+    opacity: 0.7;
+}
+  
+.text {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
 .greetings{
     font-size: 6rem;
     font-weight: 900;
 }
 .greetings > span{
-    animation: glow 3.5s ease-in-out infinite;
+    animation: glow 3s ease-in-out infinite;
 }
 @keyframes glow{
     0%, 100%{
@@ -30,19 +86,19 @@ body{
     }
 }
 .greetings > span:nth-child(2){
-    animation-delay: .2s ;
+    animation-delay: .6s ;
 }
 .greetings > span:nth-child(3){
-    animation-delay: .4s ;
+    animation-delay: .8s ;
 }
 .greetings > span:nth-child(4){
-    animation-delay: .6s;
+    animation-delay: 1s;
 }
 .greetings > span:nth-child(5){
-    animation-delay: .8s;
+    animation-delay: 1.2s;
 }
 .greetings > span:nth-child(6){
-    animation-delay: 1s;
+    animation-delay: 1.4s;
 }
 .greetings > span:nth-child(7){
     animation-delay: 1.2s;
